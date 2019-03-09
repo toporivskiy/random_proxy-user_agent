@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Random Proxy & User-Agent",
+  "description": "При каждом открытии страницы переход осуществляется через случайный Proxy и User Agent.",
+  "version": "1.0",
+  "icons": {
+    "128": "icon.png"
+  },
+
+
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+
+
+  "permissions": [
+
+    "tabs",
+    "background",
+    "proxy",
+
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage",
+    "activeTab"
+  ],
+
+  "browser_action": {
+  	"default_title": "Random Proxy & User-Agent"//,
+  	//"default_icon": "customs.png",
+  	//"default_popup": "popup.html"
+  }
+	
+}
